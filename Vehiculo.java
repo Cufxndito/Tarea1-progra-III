@@ -2,13 +2,13 @@ public class Vehiculo implements Conducible {
 
     private String marca;
     private String modelo;
-    private int anioFabricacion;
+    private int añoFabricacion;
     private double precio;
 
-    public Vehiculo(String marca, String modelo, int anioFabricacion, double precio) {
+    public Vehiculo(String marca, String modelo, int añoFabricacion, double precio) {
         this.marca = marca;
         this.modelo = modelo;
-        this.anioFabricacion = anioFabricacion;
+        this.añoFabricacion = añoFabricacion;
         this.precio = precio;
     }
 
@@ -20,7 +20,7 @@ public class Vehiculo implements Conducible {
     public void mostrarInfo() {
         System.out.println("Marca: " + this.marca);
         System.out.println("Modelo: " + this.modelo);
-        System.out.println("Anio de fabricacion: " + this.anioFabricacion);
+        System.out.println("Año de fabricacion: " + this.añoFabricacion);
         System.out.println("Precio: $" + this.precio);
     }
 
@@ -33,8 +33,8 @@ public class Vehiculo implements Conducible {
         return modelo;
     }
 
-    public int getAnioFabricacion() {
-        return anioFabricacion;
+    public int getAñoFabricacion() {
+        return añoFabricacion;
     }
 
     public double getPrecio() {
@@ -50,8 +50,8 @@ public class Vehiculo implements Conducible {
         this.modelo = modelo;
     }
 
-    public void setAnioFabricacion(int anioFabricacion) {
-        this.anioFabricacion = anioFabricacion;
+    public void setAñoFabricacion(int añoFabricacion) {
+        this.añoFabricacion = añoFabricacion;
     }
 
     public void setPrecio(double precio) {
